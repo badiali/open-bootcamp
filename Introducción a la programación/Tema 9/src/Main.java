@@ -6,20 +6,14 @@ public class Main {
         cliente.edad = 40;
         cliente.telefono = 666999666;
         cliente.credito = 575.57;
-        System.out.println(cliente.nombre);
-        System.out.println(cliente.edad);
-        System.out.println(cliente.telefono);
-        System.out.println(cliente.credito);
+        System.out.println("Soy " + cliente.nombre + " tengo " + cliente.edad + " años, mi teléfono es " + cliente.telefono + " y mi crédito es de " + cliente.credito);
         // Instancia trabajador
         Trabajador trabajador = new Trabajador();
         trabajador.nombre = "Victor";
         trabajador.edad = 35;
         trabajador.telefono = 999666999;
         trabajador.salario = 2565.83;
-        System.out.println(trabajador.nombre);
-        System.out.println(trabajador.edad);
-        System.out.println(trabajador.telefono);
-        System.out.println(trabajador.salario);
+        System.out.println("Soy " + trabajador.nombre + " tengo " + trabajador.edad + " años, mi teléfono es " + trabajador.telefono + " y mi salario es de " + trabajador.salario);
     }
 }
 
