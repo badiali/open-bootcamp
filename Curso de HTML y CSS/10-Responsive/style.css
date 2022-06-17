@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.5rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-color: rgb(88, 225, 139);
+}
+.item {
+  margin-right: 1rem;
+}
+
+main {
+  padding: 2rem;
+  flex-grow: 1;
+  background-color: rgb(47, 138, 224);
+}
+h1 {
+  margin-top: 0;
+}
+
+@media (min-width: 640px) {
+  .container {
+    flex-direction: row;
+  }
+  aside {
+    flex-direction: column;
+  }
+  .item {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
