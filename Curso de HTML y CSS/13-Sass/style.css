@@ -1,0 +1,34 @@
+.btn, .btn-2 {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: indigo;
+  background-color: darkkhaki;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover, .btn-2:hover {
+  background-color: #a9a34c;
+}
+
+.btn-2 {
+  background-color: coral;
+}
+.btn-2:hover {
+  background-color: #ff5a1d;
+}
+
+h1 {
+  color: purple;
+  background-color: pink;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+p {
+  background-color: #7fff7f;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */

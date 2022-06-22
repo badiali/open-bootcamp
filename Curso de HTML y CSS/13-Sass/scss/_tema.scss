@@ -1,0 +1,12 @@
+@use "builtin";
+@use "variables";
+@use "mixins";
+
+h1 {
+  color: variables.$primary;
+  @include mixins.test();
+}
+
+p {
+  @include mixins.test(builtin.$primary-inv);
+}

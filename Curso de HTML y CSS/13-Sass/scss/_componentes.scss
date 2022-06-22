@@ -1,0 +1,20 @@
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: indigo;
+  background-color: darkkhaki;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: darken(darkkhaki, 10)
+  }
+}
+
+.btn-2 {
+  @extend .btn;
+  background-color: coral;
+  &:hover {
+    background-color: darken(coral, 10)
+  }
+}

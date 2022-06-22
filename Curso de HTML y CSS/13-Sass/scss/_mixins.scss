@@ -1,0 +1,5 @@
+@mixin test($bg: pink) {
+  background-color: $bg;
+  padding: 10px;
+  text-transform: uppercase;
+}

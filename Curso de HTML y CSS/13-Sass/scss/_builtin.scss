@@ -1,0 +1,9 @@
+@use "sass:string";
+@use "sass:color";
+@use "variables";
+
+$string: "Luis Badiali";
+@debug string.length($string);
+@debug string.to-upper-case($string);
+
+$primary-inv: color.invert(variables.$primary);
