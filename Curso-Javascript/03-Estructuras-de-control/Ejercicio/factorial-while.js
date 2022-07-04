@@ -1,11 +1,11 @@
 // Calcular el factorial de 10 con while
 
-let factorial = 10;
-let total;
-let i = 0;
+let factorial = 1;
+let i = 10;
 
-while (i < factorial) {
-  total = factorial * i;
-  console.log(total);
-  i++;
+while (i > 1) {
+  factorial *= i;
+  i--;
 }
+
+console.log(factorial);
