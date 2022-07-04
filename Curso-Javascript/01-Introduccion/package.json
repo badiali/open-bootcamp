@@ -1,0 +1,12 @@
+{
+  "name": "01-02-primer-ejercicio-node",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Primer ejercicio de Node",
+  "main": "index.js",
+  "scripts": {
+    "saludo": "node index.js"
+  },
+  "author": "Luis Badiali",
+  "license": "ISC"
+}
