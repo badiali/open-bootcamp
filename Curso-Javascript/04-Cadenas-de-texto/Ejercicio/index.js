@@ -21,14 +21,11 @@ console.log(lengthEstudiante);
 const firstLetterNombre = miNombre.charAt(0);
 console.log(firstLetterNombre);
 
-const lastLetterApellido = miApellido.charAt(6);
+const lastLetterApellido = miApellido.charAt(miApellido.length - 1);
 console.log(lastLetterApellido);
 
-const trimEstudiante = estudiante.trim();
-console.log(trimEstudiante);
-
-const parrafo = "Lorem ispum dolor sit amet";
-console.log(parrafo.trim());
+const replaceEstudiante = estudiante.replace(" ", "");
+console.log(replaceEstudiante);
 
 const isNombre = estudiante.includes(miNombre);
 console.log(isNombre);
