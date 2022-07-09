@@ -11,19 +11,13 @@ let peso_kg = 90.5;
 console.log(peso_kg);
 
 // Una variable que contenga tu altura en metros redondeada hacia arriba
-let altura_arriba = altura_m.toFixed(1)
+let altura_arriba = Math.ceil(altura_m);
 console.log(altura_arriba);
 
 // Una variable que contenga tu peso en kilogramos redondeado hacia abajo
-let peso_abajo = peso_kg.toFixed(0)
+let peso_abajo = Math.floor(peso_kg);
 console.log(peso_abajo);
 
 // Una variable que contenga si "el máximo valor que se puede obtener en Javascript + 1" es igual al máximo valor que se puede obtener en Javascript
-let max_valor_JS = Number.MAX_VALUE;
-console.log(max_valor_JS);
-
-let max_valor_JS2 = max_valor_JS + 1;
-console.log(max_valor_JS2);
-
-let comparacion = max_valor_JS == max_valor_JS2;
+let comparacion = Number.MAX_VALUE === Number.MAX_VALUE + 1;
 console.log(comparacion);
