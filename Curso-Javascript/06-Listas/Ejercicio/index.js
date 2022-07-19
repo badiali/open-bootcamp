@@ -4,26 +4,40 @@ console.log(listaCompra);
 listaCompra.push("Aceite de Girasol");
 console.log(listaCompra);
 
-listaCompra.pop("Aceite de Girasol");
+listaCompra.pop();
 console.log(listaCompra);
 
-const favPelis = [
-  {titulo: "La historia interminable", director: "Wolfgang Petersen", fecha: 1984},
-  {titulo: "Cortocircuito", director: "John Badham", fecha: 1986},
-  {titulo: "Thor: Love and Thunder", director: "StTaika Waititi", fecha: 2022}
+const peliculas = [
+  {
+    titulo: "La historia interminable",
+    director: "Wolfgang Petersen",
+    fecha: new Date(1984, 11, 6),
+  },
+  {
+    titulo: "Cortocircuito",
+    director: "John Badham",
+    fecha: new Date(1986, 4, 9),
+  },
+  {
+    titulo: "Thor: Love and Thunder",
+    director: "StTaika Waititi",
+    fecha: new Date(2022, 6, 8),
+  },
 ];
 
-const filterPelis = favPelis.filter((obj) => obj.fecha > 2010);
-console.log(filterPelis);
+const peliculasRecientes = peliculas.filter(
+  (pelicula) => pelicula.fecha > new Date(2010, 0, 1)
+);
+console.log(peliculasRecientes);
 
-const mapPelisDir = favPelis.map((pelis) => pelis.director);
-console.log(mapPelisDir);
+const directores = peliculas.map(pelicula => pelicula.director);
+console.log(directores);
 
-const mapPelisTit = favPelis.map((pelis) => pelis.titulo);
-console.log(mapPelisTit);
+const titulos = peliculas.map(pelicula => pelicula.titulo);
+console.log(titulos);
 
-const concatDirTit = mapPelisDir.concat(mapPelisTit);
-console.log(concatDirTit);
+const directores_titulos = directores.concat(titulos);
+console.log(directores_titulos);
 
-const concatProp = [...mapPelisDir, ...mapPelisTit];
-console.log(concatProp);
+const directores_titulos_prop = [...directores, ...titulos];
+console.log(directores_titulos_prop);
