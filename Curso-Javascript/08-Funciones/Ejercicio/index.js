@@ -8,14 +8,14 @@ const miPromesa = new Promise((resolve, reject) => {
 });
 miPromesa.then(() => console.log("Hola soy una promesa"));
 
+async function damePromesa() {
+  return setTimeout(() => console.log("Hola soy una promesa"), 5000)
+}
+
 function* generarPares() {
   let id = 0;
   while (true) {
-    id += 2;
-    if (id === 10) {
-      return id;
-    }
-    yield id;
+    yield id += 2;
   }
 }
 
