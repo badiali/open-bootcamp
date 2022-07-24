@@ -1,1 +1,1 @@
-{"level":"error","message":"Error: El valor debe ser de tipo número.","service":"user-service"}
+{"level":"error","message":"Error: Función que muestra Error","service":"user-service"}
