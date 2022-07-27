@@ -1,12 +1,10 @@
 const nombre = "Luis"
 const apellido = "Badiali"
-const objeto = { nombre, apellido }
+const datos = { nombre, apellido }
 
-sessionStorage.setItem("objSesion", JSON.stringify(objeto))
+sessionStorage.setItem("datos", JSON.stringify(datos))
 
-localStorage.setItem("objStorage", JSON.stringify(objeto))
+localStorage.setItem("datos", JSON.stringify(datos))
 
-const date = new Date()
-date.setTime(date.getTime()+(2*60*1000))
-
-document.cookie = "objCookie=" + JSON.stringify(objeto) + ";expires=" + date.toUTCString()
+const now = new Date()
+document.cookie = `datos=${JSON.stringify(datos)};expires="${new Date(now.getTime()+(2*60*1000)).toUTCString()}`
