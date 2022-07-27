@@ -1,11 +1,7 @@
-const btn = document.querySelector("#btn")
+const btn = document.querySelector("button")
 
-btn.addEventListener("click", () => {
-  alert("click en el botón")
-})
+btn.addEventListener("click", () => alert("click en el botón"))
 
 $(() => {
-  $("#btn").click(() => {
-    console.log("Hola, estoy utilizando jQuery")
-  })
+  $("button").click(() => console.log("Hola, estoy utilizando jQuery"))
 })
