@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import "./ComponenteB.css";
 
 const ComponenteB = (estado) => {
   const [conectado, setConectado] = useState(estado);
