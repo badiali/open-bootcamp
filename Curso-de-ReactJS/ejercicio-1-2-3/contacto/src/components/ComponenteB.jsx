@@ -6,7 +6,7 @@ const ComponenteB = (estado) => {
 
   return (
     <div className="ComponenteB">
-      <p className={`${conectado ? "online" : "offline"}`}>
+      <p className={conectado ? "online" : "offline"}>
         {conectado ? "Contacto en línea" : "Contacto No Disponible"}
       </p>
       <button onClick={() => setConectado(!conectado)}>
