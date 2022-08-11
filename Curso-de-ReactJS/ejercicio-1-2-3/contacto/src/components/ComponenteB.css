@@ -1,0 +1,10 @@
+.ComponenteB {
+  display: flex;
+  flex-direction: column;
+}
+.online {
+  color: green;
+}
+.offline {
+  color: red;
+}
